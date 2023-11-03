@@ -1,0 +1,545 @@
+:root {
+    --celeste:rgba(112, 225, 250, 0.6);
+    --morado:#af20d3;
+    --mora: #642a739b;
+    --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: var(--mora);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to right, var(--mora) 0%, hsla(51, 99%, 62%, 0.600) 100%), url(../imagen1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav .nombre{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 10px;
+    color: var(--white);
+    font-size: 50px;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal li:hover{
+	background-color: rgb(116, 116, 116);
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+
+.wave{
+    position:absolute ;
+    bottom: 0;
+    width: 100%;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 70px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: var(--mora);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    margin: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 35%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid var(--morado);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+/*Pregunta Main*/
+
+.pregunta{
+    margin: 80px 10px 20px 10px;
+    padding: 1.5em;
+}
+.pregunta h2 {
+    margin: 20px 0px 60px 0px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--mora);
+}
+
+
+/* Opciones */
+
+.opciones{
+    margin: 20px 10px 100px 10px;
+    padding: 1.5em;
+   
+}
+.opciones h2{
+    margin: 20px 0px 20px 20px;
+    font-size: 30px;
+    text-align: start;
+    color: var(--mora);
+
+}
+
+.opciones form{
+    margin: 10px;
+
+}
+/* Seccion Problema */
+
+.opciones .problema select{
+    width: 600px;
+    font-size: 20px;
+    background-color: var(--morado);
+    border: none;
+    padding: .8em 4em;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Seccion Marca */
+
+.opciones .marca select{
+    width: 600px;
+    font-size: 20px;
+    background-color: var(--morado);
+    border: none;
+    padding: .8em 4em;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.opciones a{
+    margin: 20px 10px;
+    border: none;
+    padding: 1em 17.1em;
+    background-color: #808080;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.opciones a:hover{
+    background-color: var(--morado);
+    color: rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+
+/*MODELOS*/
+.modelo {
+    display: none;
+}
+
+.imagen-opciones{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 100rem;
+    right: 10rem;
+}
+.opciones .modelo select{
+    width: 600px;
+    font-size: 20px;
+    background-color: var(--morado);
+    border: none;
+    padding: .8em 4em;
+    margin: 0px 0px 20px 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+.modelo-otra{
+    display: none;
+    margin: 10px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.modelo-otra input{
+    width: 600px;
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: var(--morado);
+    color: var(--white);
+    border-radius: 5px;
+}
+.modelo-otra input::placeholder{
+    color: var(--white);
+}
+/* Metodos y Pago*/
+
+
+.titulo-pago{
+    text-align: center;
+    color: var(--mora);
+
+}
+
+.pago{
+    margin: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: default;
+}
+
+.metodo{
+    background-color: var(--mora);
+    backdrop-filter: blur(5px);
+    margin: 10px 20px 40px 10px;
+    border: 2px solid black;
+    transition: all 400ms ease;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    color: var(--white);
+}
+
+.metodo:hover{
+    transform: translateY(-20px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+ .metodo i{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    color: #77ecee;
+}  
+
+.metodo h1{
+    text-align: center;
+}
+
+.metodo p{
+    margin: 10px 20px 0px 10px;
+    
+}
+
+/* MEDIA QUERIS */
+
+/* Header */
+
+@media (max-width: 748px ) {
+    header{
+        height: 200px;
+        font-size: 15px;
+    }
+}
+
+/* Opciones - Select's */
+
+@media (max-width: 748px ) {
+    .opciones .marca select,
+    .opciones .problema select{
+        width: 400px;
+        margin: 20px;
+
+    }
+
+    .opciones a{
+        padding: 1em 8.5em;
+        margin: 20px;
+
+    }
+}
+
+
+
+/* Pago y Metodos */
+
+@media (max-width: 950px) {
+    .pago{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+
+
+/*SECCION CONTACTO*/
+
+.contacto{
+    background-color: var(--mora);
+}
+
+.contacto h1{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    color: var(--white);
+    font-size: 30px;
+}
+.contacto-form{
+    background-color: var(--white);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    box-shadow: 1px 10px 16px 8px rgba(86, 86, 86, 0.75);
+}
+
+
+/* Formulario de contacto */
+
+.formulario form{
+    padding: 1em;
+    background-color: var(--white);
+    color: var(--morado);
+}
+
+.formulario form label{
+    display: block;
+}
+
+.formulario p{
+    margin: 0px;
+    padding: 1.5em;
+    font-size: 17px;
+
+    
+}
+
+.formulario form textarea,
+.formulario form input,
+.formulario form button{
+    width: 100%;
+    padding: .5em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #000;
+    border-bottom: 1px solid var(--morado);
+    font-size: 17px;
+}
+
+.formulario form .bloque input{
+    border: 0;
+    background-color: var(--morado);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.5em;
+}
+
+.formulario form .bloque input:hover{
+    background-color: rgb(0, 0, 0);
+    color: var(--morado);
+    transition: 300ms;
+}
+
+.formulario form .bloque{
+        grid-column: 1 / 3;
+}
+
+/* Redes */
+
+.contacto-otros{
+    margin: 10px;
+    padding: 1.5em;
+}
+.contacto-otros a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--morado);
+}
+.contacto-otros a:hover{
+    color: #000;
+    animation: headShake;
+    animation-duration: 2s;
+}
+
+.contacto-otros ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
